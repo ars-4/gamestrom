@@ -1,0 +1,94 @@
+@import url('fonts/stylesheet.css');
+@import url('bootstrap.min.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --glass-light: rgba(244, 244, 244, 0.2);
+    --primary-fg-color: #fa1e4e;
+}
+
+/* Global */
+.primary-btn:hover {
+    color: var(--primary-fg-color);
+    border: 2px solid currentColor;
+    background-color: transparent;
+}
+.primary-btn {
+    color: var(--bs-body-color);
+    background-color: var(--primary-fg-color);
+    border: 2px solid var(--primary-fg-color);
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--primary-fg-color);
+}
+
+.link {
+    color: var(--primary-fg-color);
+    transition: 0.5s;
+    text-decoration: none;
+    text-shadow: 1px 1px 15px currentColor;
+}
+.link:hover,
+.link:active,
+.link:focus {
+    color: var(--primary-fg-color);
+    transition: 0.5s;
+    text-decoration: none;
+    text-shadow: none;
+}
+::placeholder {
+  color: red;
+  opacity: 1; 
+}
+::-ms-input-placeholder {
+ color: red;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+
+body {
+    background-color: var(--bs-body-color);
+    /*background-image: url("../images/LedTunnelOptimized.gif");*/
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    font-family: 'Lobster Two';
+}
+
+/* Login And Register */
+.login {
+    margin-top: 10%;
+}
+.register {
+    margin-top: 1%;
+}
+.login .card,
+.register .card {
+    border: none;
+    backdrop-filter: blur(15px);
+    background-color: var(--glass-light);
+    box-shadow: 10px 10px 25px var(--primary-fg-color),
+    -10px -10px 25px var(--primary-fg-color);
+    user-select: none;
+}
+.login .card .fa {
+    color: var(--primary-fg-color);
+    text-shadow: 1px 1px 15px currentColor;
+    font-size: 28px;
+    padding: 7px;
+    background-color: var(--bs-body-color);
+}
+.login .card input,
+.register .card input {
+    color: var(--primary-fg-color);
+    border: 2px solid currentColor;
+    box-shadow: 0 0 10px currentColor;
+    background-color: transparent;
+    text-shadow: 0 0 10px currentColor;
+}
