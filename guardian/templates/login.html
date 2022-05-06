@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <div class="row login">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <form method="POST" action="" class="card">
+                {% csrf_token %}
+                <div class="card-header">
+                    <h1 class="link">Login</h1>
+                </div>
+                <div class="card-body">
+                    <input class="form-control" name="username" placeholder="Username">
+                    <br>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                    <br>
+                    <button class="btn primary-btn">Login</button>
+                </div>
+                <div class="card-footer">
+                    <p class="text-light">Don't have an account yet? <a href="{% url 'RegisterPage' %}"
+                            class="link"><b>SignUp</b></a></p>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <audio id="myaudio" autoPlay autoplay loop>
+        <source src="/static/images/ArcadeParty.mp3"  type="audio/mp3">
+    </audio>
+
+    <script src="https://kit.fontawesome.com/65fd6c747e.js" crossorigin="anonymous"></script>
+    <script>
+        let audio = document.getElementById("myaudio");
+        audio.play();
+    </script>
+
+</body>
+</html>
