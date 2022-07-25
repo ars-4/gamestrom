@@ -46,3 +46,5 @@ This is the open source code to the gamestorm app. Comming soon.
 * Create a `Person` object with the current superuser and add him in the `admin` group
 
 #### Congratulations server is running and the endpoint is http://127.0.0.1:8000/
+
+##### since this can run video game using on this server an has to do with running video games an licensing please make sure you own the game before running. 
