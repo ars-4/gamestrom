@@ -1,5 +1,5 @@
 # gamestrom
-This is the open source code to the gamestorm software. Comming soon.
+This is the open source code to the gamestorm software. 
 
 ### To Run Locally:
 #### RUNTIME: Python 3.10.2
